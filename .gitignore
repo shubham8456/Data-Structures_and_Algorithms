@@ -1,3 +1,6 @@
+# Dont need java class files
+*.class
+
 # VS Code
 .vscode/
 
