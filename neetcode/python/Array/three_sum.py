@@ -3,40 +3,6 @@
 
 from typing import List
 
-# class Solution:
-#     def threeSum(self, nums: List[int]) -> List[List[int]]:
-#         nums.sort()
-#         combos = []
-#         for first_num_idx, num_1 in enumerate(nums):
-#             if first_num_idx > 0 and num_1 == nums[first_num_idx - 1]:
-#                 continue  # Skip duplicate first numbers
-
-#             target = -1 * num_1
-#             i, j = first_num_idx + 1, len(nums) - 1
-
-#             while i < j:
-#                 sum_latter_two_nos = nums[i] + nums[j]
-#                 if target == sum_latter_two_nos:
-#                     combos.append([num_1, nums[i], nums[j]])
-
-#                     # Skip duplicate nums[i]
-#                     while i < j and nums[i] == nums[i + 1]:
-#                         i += 1
-#                     # Skip duplicate nums[j]
-#                     while i < j and nums[j] == nums[j - 1]:
-#                         j -= 1
-
-#                     i += 1
-#                     j -= 1
-
-#                 elif target > sum_latter_two_nos:
-#                     i += 1
-#                 elif target < sum_latter_two_nos:
-#                     j -= 1
-
-#         return combos
-
-
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
@@ -69,7 +35,6 @@ class Solution:
                     right -= 1
 
         return combos
-
 
 
 nums = [-1,0,1,2,-1,-4]
