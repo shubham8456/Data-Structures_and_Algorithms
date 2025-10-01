@@ -1,3 +1,6 @@
+# https://leetcode.com/problems/linked-list-cycle/description/
+# https://neetcode.io/problems/linked-list-cycle-detection?list=blind75
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
