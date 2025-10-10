@@ -12,6 +12,6 @@ class Solution:
       if num in set:
         return True
       else
-        set.add(num)
+        seen.add(num)
 
     return False
